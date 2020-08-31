@@ -16,7 +16,7 @@ Check the edid information
 edid-decode 800x1280.bin
 ```
 Make sure the __Detailed mode__ part is the same as your modeline setting.
-
+Then copy the file to /usr/lib/firmware/edid
 ```
 sudo mkdir /usr/lib/firmware/edid
 sudo cp 800x1280.bin /usr/lib/firmware/edid
