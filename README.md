@@ -7,7 +7,7 @@ git clone https://github.com/akatrevorjay/edid-generator.git
 # Install the required packages
 sudo apt install zsh edid-decode automake dos2unix
 cd edid-generator
-./modeline2edid - <<< 'Modeline "800x1280" 84.99  800 856 944 1088 1280 281 1284 1302 -HSync +Vsync ratio=16:10'
+./modeline2edid - <<< 'Modeline "800x1280" 84.99  800 856 944 1088 1280 1281 1284 1302 -HSync +Vsync ratio=16:10'
 make
 ```
 The file __800x1280.bin__ shoud be found in the same folder.
