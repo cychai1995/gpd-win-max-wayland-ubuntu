@@ -1,5 +1,6 @@
 # gpd-win-max-wayland-ubuntu
 The following steps only tested on Ubuntu 20.04 with GPD Win Max.
+
 2020/09/01 Updated: [Extract edid information from windows](https://www.reddit.com/comments/ik3dje)
 # Steps
 ## 1. Generate EDID information
