@@ -28,7 +28,7 @@ sudo vim /etc/default/grub
 ```
 Edit the GRUB_CMDLINE_LINUX_DEFAULT, the framebuffer is also rotated.
 ```
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash drm_kms_helper.edid_firmware=edid/800x1280.bin fbcon=rotate:1"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash drm_kms_helper.edid_firmware=eDP-1:edid/800x1280.bin fbcon=rotate:1"
 ```
 Save and run `sudo update-grub`. Reboot and login to the Ubuntu on Wayland
 
