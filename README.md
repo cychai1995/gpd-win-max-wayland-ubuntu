@@ -1,7 +1,8 @@
 # gpd-win-max-wayland-ubuntu
 The following steps only tested on Ubuntu 20.04 with GPD Win Max.
 
-2020/09/01 Updated: [Extract edid information from windows](https://www.reddit.com/comments/ik3dje)
+2020/09/01 Updated: [Extract edid information from windows](https://www.reddit.com/comments/ik3dje)=> Use the dumped EDID binary and jump to Step2 directly.
+
 # Steps
 ## 1. Generate EDID information
 ```
@@ -18,13 +19,14 @@ Check the edid information
 edid-decode 800x1280.bin
 ```
 Make sure the __Detailed mode__ part is the same as your modeline setting.
-Then copy the file to /usr/lib/firmware/edid
+
+## 2. Then copy the file to /usr/lib/firmware/edid
 ```
 sudo mkdir /usr/lib/firmware/edid
 sudo cp 800x1280.bin /usr/lib/firmware/edid
 ```
 
-## 2. Update Grub
+## 3. Update Grub
 ```
 sudo vim /etc/default/grub
 ```
